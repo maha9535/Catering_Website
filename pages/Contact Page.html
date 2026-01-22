@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gokula Delights</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">GD</div>
+                <div class="logo-text">
+                    <h1>Gokula Delights</h1>
+                    <p>Catering Services</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Caterers.html">Caterers</a></li>
+                    <li><a href="./Contact Page.html" class="active">Contact</a></li>
+                    <li><a href="./Caterers Login Page.html" class="btn-login">Caterer Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <section class="page-header">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you. Let's make your event special!</p>
+        </div>
+    </section>
+
+   
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                
+                <div class="contact-form-wrapper">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" onsubmit="submitContactForm(event)">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" required placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <select required>
+                                <option value="">Select subject</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea rows="5" required placeholder="Tell us about your event or inquiry..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+               
+                <div class="contact-info-wrapper">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                            <p>+91 98765 43211</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@gokuladelights.com</p>
+                            <p>support@gokuladelights.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Address</h4>
+                            <p>123, Anna Salai</p>
+                            <p>Chennai - 600002</p>
+                            <p>Tamil Nadu, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Sunday</p>
+                            <p>9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How far in advance should I book?</h4>
+                    <p>We recommend booking at least 2-4 weeks in advance for regular events and 2-3 months for weddings to ensure availability.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer food tasting sessions?</h4>
+                    <p>Yes! We offer complimentary tasting sessions for wedding bookings and paid tasting for other events.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your cancellation policy?</h4>
+                    <p>Cancellations made 7+ days before the event receive a full refund. Within 7 days, 50% of the advance is refundable.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you provide serving staff?</h4>
+                    <p>Yes, all our packages include professional serving staff. Additional staff can be arranged if needed.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can you accommodate dietary restrictions?</h4>
+                    <p>Absolutely! We can customize menus for vegetarian, vegan, gluten-free, and other dietary requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What areas do you serve?</h4>
+                    <p>We primarily serve Chennai and surrounding areas within 50km. Long-distance catering can be discussed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Plan Your Event?</h2>
+            <p>Browse our caterers and book the perfect service for your occasion</p>
+            <a href="./Caterers.html" class="btn btn-light">Explore Caterers</a>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Gokula Delights</h3>
+                <p>Chennai's premier catering service provider, serving delicious food for all your special occasions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./caterers.html">Our Caterers</a></li>
+                    <li><a href="./Contact Page.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#wedding">Wedding Catering</a></li>
+                    <li><a href="services.html#corporate">Corporate Events</a></li>
+                    <li><a href="services.html#birthday">Birthday Parties</a></li>
+                    <li><a href="services.html#home">Home Catering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📞 +91 98765 43210</li>
+                    <li>📧 info@gokuladelights.com</li>
+                    <li>📍 Chennai, Tamil Nadu</li>
+                    <li>🕒 Mon-Sun: 9AM-9PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gokula Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitContactForm(event) {
+            event.preventDefault();
+            alert('Thank you for contacting us! We will get back to you within 24 hours.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caterer Login - Gokula Delights</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">GD</div>
+                <div class="logo-text">
+                    <h1>Gokula Delights</h1>
+                    <p>Pre Catering Services</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Caterers.html">Caterers</a></li>
+                    <li><a href="./Contact Page.html">Contact</a></li>
+                    <li><a href="./Caterers Login Page.html" class="btn-login active">Caterer Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="login-section">
+        <div class="login-container">
+            
+           
+            <div class="login-card">
+                <div class="login-header">
+                    <h2>Caterer Login</h2>
+                    <p>Access your dashboard to manage bookings</p>
+                </div>
+
+              
+                <div class="login-tabs">
+                    <button class="tab-btn active" onclick="showTab('login')">Login</button>
+                    <button class="tab-btn" onclick="showTab('register')">Register</button>
+                </div>
+
+                
+                <div id="loginTab" class="tab-content active">
+                    <form class="auth-form" onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password *</label>
+                            <input type="password" required placeholder="Enter your password">
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    </form>
+                </div>
+
+               
+                <div id="registerTab" class="tab-content">
+                    <form class="auth-form" onsubmit="handleRegister(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Business Name *</label>
+                                <input type="text" required placeholder="Enter business name">
+                            </div>
+                            <div class="form-group">
+                                <label>Owner Name *</label>
+                                <input type="text" required placeholder="Enter your name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" required placeholder="Enter phone number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Business Address *</label>
+                            <input type="text" required placeholder="Enter your business address">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Password *</label>
+                                <input type="password" required placeholder="Create password">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password *</label>
+                                <input type="password" required placeholder="Confirm password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Specialization *</label>
+                            <select required>
+                                <option value="">Select specialization</option>
+                                <option value="south-indian">South Indian</option>
+                                <option value="north-indian">North Indian</option>
+                                <option value="continental">Continental</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="multi-cuisine">Multi-Cuisine</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to the Terms and Conditions</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Register Now</button>
+                    </form>
+                </div>
+
+            </div>
+
+            
+            <div class="benefits-card">
+                <h3>Why Partner With Us?</h3>
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📊</div>
+                        <div>
+                            <h4>Manage Your Business</h4>
+                            <p>Easy-to-use dashboard to manage bookings and menus</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">👥</div>
+                        <div>
+                            <h4>Get More Customers</h4>
+                            <p>Reach thousands of potential customers in Chennai</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💳</div>
+                        <div>
+                            <h4>Secure Payments</h4>
+                            <p>Timely payments and transparent transaction history</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⭐</div>
+                        <div>
+                            <h4>Build Your Reputation</h4>
+                            <p>Customer reviews help grow your business</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📱</div>
+                        <div>
+                            <h4>24/7 Access</h4>
+                            <p>Manage your profile and bookings anytime, anywhere</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <div>
+                            <h4>Marketing Support</h4>
+                            <p>Get featured in our promotional campaigns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Gokula Delights</h3>
+                <p>Chennai's premier catering service provider, serving delicious food for all your special occasions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Caterers.html">Our Caterers</a></li>
+                    <li><a href="./Contact Page.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#wedding">Wedding Catering</a></li>
+                    <li><a href="services.html#corporate">Corporate Events</a></li>
+                    <li><a href="services.html#birthday">Birthday Parties</a></li>
+                    <li><a href="services.html#home">Home Catering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📞 +91 98765 43210</li>
+                    <li>📧 info@gokuladelights.com</li>
+                    <li>📍 Chennai, Tamil Nadu</li>
+                    <li>🕒 Mon-Sun: 9AM-9PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gokula Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            
+            if (tabName === 'login') {
+                document.getElementById('loginTab').classList.add('active');
+                document.querySelectorAll('.tab-btn')[0].classList.add('active');
+            } else {
+                document.getElementById('registerTab').classList.add('active');
+                document.querySelectorAll('.tab-btn')[1].classList.add('active');
+            }
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login functionality will be implemented in the backend. You would be redirected to your dashboard.');
+        }
+
+        function handleRegister(event) {
+            event.preventDefault();
+            alert('Registration successful! Please check your email for verification. You can now login to access your dashboard.');
+            showTab('login');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

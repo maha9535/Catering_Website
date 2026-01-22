@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Caterers - Gokula Delights</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">GD</div>
+                <div class="logo-text">
+                    <h1>Gokula Delights</h1>
+                    <p>Catering Services</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Caterers.html" class="active">Caterers</a></li>
+                    <li><a href="./Contact Page.html">Contact</a></li>
+                    <li><a href="./Caterers Login Page.html" class="btn-login">Caterer Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Our Expert Caterers</h2>
+            <p>Browse through Chennai's best catering services</p>
+        </div>
+    </section>
+
+   
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>Cuisine</label>
+                    <select id="cuisineFilter" onchange="filterCaterers()">
+                        <option value="all">All Cuisines</option>
+                        <option value="south-indian">South Indian</option>
+                        <option value="north-indian">North Indian</option>
+                        <option value="continental">Continental</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="priceFilter" onchange="filterCaterers()">
+                        <option value="all">All Prices</option>
+                        <option value="budget">Budget (₹200-400)</option>
+                        <option value="mid">Mid-Range (₹400-700)</option>
+                        <option value="premium">Premium (₹700+)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Rating</label>
+                    <select id="ratingFilter" onchange="filterCaterers()">
+                        <option value="all">All Ratings</option>
+                        <option value="4.5">4.5★ & Above</option>
+                        <option value="4.0">4.0★ & Above</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="container caterers-section">
+        <div class="caterers-grid">
+            
+           
+            <div class="caterer-card" data-cuisine="south-indian" data-price="350" data-rating="4.9">
+                <div class="caterer-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=250&fit=crop" alt="Traditional South Feast" class="caterer-image">
+                    <div class="caterer-badge">Available</div>
+                </div>
+                <div class="caterer-content">
+                    <div class="caterer-header">
+                        <div>
+                            <h3 class="caterer-name">Traditional South Feast</h3>
+                            <div class="caterer-location">📍 T. Nagar, Chennai</div>
+                        </div>
+                        <div class="caterer-rating">⭐ 4.9</div>
+                    </div>
+                    <div class="caterer-specialties">
+                        <span class="specialty-tag">South Indian</span>
+                        <span class="specialty-tag">Traditional</span>
+                        <span class="specialty-tag">Authentic</span>
+                    </div>
+                    <p class="caterer-description">Authentic South Indian cuisine with traditional recipes. Perfect for weddings and ceremonies.</p>
+                    <div class="caterer-price">₹350 per plate</div>
+                    <div class="price-note">Minimum 50 guests</div>
+                    <div class="caterer-actions">
+                        <button class="btn btn-primary" onclick="viewDetails(1)">View Details</button>
+                        <button class="btn btn-secondary" onclick="openBooking(1)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="caterer-card" data-cuisine="north-indian" data-price="500" data-rating="4.7">
+                <div class="caterer-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=250&fit=crop" alt="Royal North Indian" class="caterer-image">
+                    <div class="caterer-badge">Available</div>
+                </div>
+                <div class="caterer-content">
+                    <div class="caterer-header">
+                        <div>
+                            <h3 class="caterer-name">Royal North Indian</h3>
+                            <div class="caterer-location">📍 Adyar, Chennai</div>
+                        </div>
+                        <div class="caterer-rating">⭐ 4.7</div>
+                    </div>
+                    <div class="caterer-specialties">
+                        <span class="specialty-tag">North Indian</span>
+                        <span class="specialty-tag">Mughlai</span>
+                        <span class="specialty-tag">Tandoori</span>
+                    </div>
+                    <p class="caterer-description">Specializing in Mughlai and North Indian delicacies with rich flavors and royal presentation.</p>
+                    <div class="caterer-price">₹500 per plate</div>
+                    <div class="price-note">Minimum 75 guests</div>
+                    <div class="caterer-actions">
+                        <button class="btn btn-primary" onclick="viewDetails(2)">View Details</button>
+                        <button class="btn btn-secondary" onclick="openBooking(2)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="caterer-card" data-cuisine="continental" data-price="650" data-rating="4.8">
+                <div class="caterer-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=250&fit=crop" alt="Global Fusion Delights" class="caterer-image">
+                    <div class="caterer-badge">Available</div>
+                </div>
+                <div class="caterer-content">
+                    <div class="caterer-header">
+                        <div>
+                            <h3 class="caterer-name">Global Fusion Delights</h3>
+                            <div class="caterer-location">📍 Velachery, Chennai</div>
+                        </div>
+                        <div class="caterer-rating">⭐ 4.8</div>
+                    </div>
+                    <div class="caterer-specialties">
+                        <span class="specialty-tag">Continental</span>
+                        <span class="specialty-tag">Chinese</span>
+                        <span class="specialty-tag">Italian</span>
+                    </div>
+                    <p class="caterer-description">Contemporary multi-cuisine catering with international flavors. Perfect for corporate events.</p>
+                    <div class="caterer-price">₹650 per plate</div>
+                    <div class="price-note">Minimum 100 guests</div>
+                    <div class="caterer-actions">
+                        <button class="btn btn-primary" onclick="viewDetails(3)">View Details</button>
+                        <button class="btn btn-secondary" onclick="openBooking(3)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Caterer Details</h2>
+                <button class="modal-close" onclick="closeModal('detailsModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+               
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Catering Service</h2>
+                <button class="modal-close" onclick="closeModal('bookingModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form" onsubmit="submitBooking(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" required placeholder="Enter your phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Event Date *</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Number of Guests *</label>
+                            <input type="number" required placeholder="Enter guest count">
+                        </div>
+                        <div class="form-group">
+                            <label>Event Type *</label>
+                            <select required>
+                                <option value="">Select type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Requirements</label>
+                        <textarea rows="4" placeholder="Any dietary restrictions or special requests..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Gokula Delights</h3>
+                <p>Chennai's premier catering service provider, serving delicious food for all your special occasions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Caterers.html">Our Caterers</a></li>
+                    <li><a href="./Contact Page.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#wedding">Wedding Catering</a></li>
+                    <li><a href="services.html#corporate">Corporate Events</a></li>
+                    <li><a href="services.html#birthday">Birthday Parties</a></li>
+                    <li><a href="services.html#home">Home Catering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📞 +91 98765 43210</li>
+                    <li>📧 info@gokuladelights.com</li>
+                    <li>📍 Chennai, Tamil Nadu</li>
+                    <li>🕒 Mon-Sun: 9AM-9PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gokula Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
